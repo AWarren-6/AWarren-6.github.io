@@ -1,0 +1,14 @@
+Perdictive Power Score/Ppscore/PPS - A Brief Introduction to a Rather Interesting Data Science Library
+
+
+    As I continue my journey of becoming a full fledged Data Science, I've come across a library that I haven't come across before and I'd like to briefly discuss it. I've come across a lesser known library package for python called "Ppscore".
+    "Ppscore" is an acronym for "Predictive Power Score". Before I go into the package details itself, let's review what the score means. Often times, as analysts, scientists, statisticians, etc., we're really interested in noticing any trends or relationships between different variables in a data set. To accomplish this, we'll go ahead and calculate the correlation of the variables. But then we run into the next issue: most of our columns are of categorical data like "Color" and "Location", for example, and correlation only works for numeric columns. How do we go about our data analysis with this major obstacle in our way? This is where Ppscore comes into play.
+    The Predictive Power Score (PPS) is another way for us to see relationships between columns that correlation wouldn't be able to pick up on. This includes non-numeric columns, non-linear data, and asymetric data.
+    Using the PPS would allow us users to capture more data than what we can capture only with correlation. For example, finding the correlation of certain columns assume that the data is symmetrical, which isn't always the case in the real world. However, PPS can take that assumption and work with it to include assymetrical data as well. The potential downside to this is that, as a result, the PPS can model Y to X, but not necessarily X to Y. This means that modeling one direction may work, but not for the other. It is also very likely that modeling in each direction will produce different PPS scores as a result. This is to be expected because one variable may be a better predictor of the other variable than vice versa.
+    As of now, there isn't really an alternative to this library at the moment, due to how new it is (first entry on it was released on 4/23/2020). If anything, we can still consider correlation as the main alternative for it, due to the PPS being an initial, additive component for correlation to begin with. The PPS library was created by Florian Wetschoreck, who was a co-creator for bamboolib, another tool used for easier use among Python Pandas users. To find out more information, please visit the below links for more details:
+    
+    https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598
+    
+    https://github.com/8080labs/ppscore
+    
+    https://paulvanderlaken.com/2020/05/04/predictive-power-score-finding-patterns-dataset/
